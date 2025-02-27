@@ -1,0 +1,17 @@
+name = "schoology-dashboard-backend"
+type = "javascript"
+
+account_id = "your-cloudflare-account-id"
+zone_id = "your-zone-id" # Optional, if using a custom domain
+
+[env.production]
+vars = {
+    SCHOOLOGY_CONSUMER_KEY = "your-consumer-key",
+    SCHOOLOGY_CONSUMER_SECRET = "your-consumer-secret"
+}
+
+[triggers]
+routes = [
+    "api.example.com/auth", # Replace with your domain
+    "api.example.com/grades"
+]
