@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>InsightBeam Dashboard</h1>
+        <div id="dashboard">
+            <div id="gradeChart">
+                <h2>Grade Chart</h2>
+                <canvas id="chart"></canvas>
+            </div>
+            <div id="insights">
+                <h2>Insights</h2>
+                <p id="insightsText"></p>
+            </div>
+            <div id="missingAssignments">
+                <h2>Missing Assignments</h2>
+                <ul id="assignmentsList"></ul>
+            </div>
+            <div id="upcomingEvents">
+                <h2>Upcoming Events</h2>
+                <ul id="eventsList"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
