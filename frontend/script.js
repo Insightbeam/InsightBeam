@@ -1,5 +1,5 @@
 async function fetchData(endpoint) {
-    const response = await fetch(`/api/${endpoint}`);
+    const response = await fetch(`https://api.example.com/${endpoint}`); // Replace with your domain
     return response.json();
 }
 
